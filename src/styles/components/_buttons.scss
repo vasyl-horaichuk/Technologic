@@ -1,0 +1,35 @@
+.btn {
+    border-radius: 5px;
+    padding: 9px 27px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &-grey {
+        color: #fff;
+        background-color: #C4C4C4;
+    }
+
+    &-main {
+        color: #fff;
+        background-color: $primary;
+        &:hover {
+            background: #FFC600;
+        }
+    }
+
+    &-outline {
+        padding: 6px 0;
+        border-radius: 6px;
+        height: 40px;
+        max-width: 150px;
+        background-color: #fff;
+        border: 1px solid $secondary;
+        font-family: "Open Sans", sans-serif;
+        color: $secondary;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 25.6px;
+    }
+}

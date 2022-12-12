@@ -1,0 +1,283 @@
+.order{
+    padding: 42px 0px 110px;
+
+    @media print {
+        display: none;
+    }
+
+    &-container{
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+    &-title{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        color: #18191F;
+        text-align: center;
+        margin-bottom: 50px;
+
+        @include media-queries(tablet-wide){
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+
+    &-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+
+        @include media-queries(tablet-wide){
+            grid-template-columns: 1fr;
+            gap: 30px
+        }
+    }
+
+    &-logo{
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+
+        @include media-queries(tablet-wide){
+            grid-column: 1/2;
+        }
+    }
+
+    &-actions{
+        display: flex;
+        align-items: center;
+        justify-self: end;
+
+        @include media-queries(tablet-wide){
+            justify-self: center;
+        }
+
+        button{ 
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin-right: 33px;
+
+            &:last-child{
+                margin: 0;
+            }
+
+            span{
+                font-size: 18px;
+                line-height: 22px;
+                color: #868687;
+                margin-right: 30px;
+            }
+
+            svg{
+                width: 24px;
+                height: 24px;
+                fill: #1E85DA;
+            }
+        }
+    }
+
+    &-form{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 60px;
+        margin-top: 67px;
+
+        @include media-queries(tablet-wide){
+            grid-template-columns: 1fr;
+        }
+
+        .-fluid{
+            grid-column-end: span 6;
+
+            @include media-queries(tablet-wide){
+                grid-column-end: span 1;
+            }
+        }
+
+        &-block{
+            grid-column-end: span 3;
+
+            @include media-queries(tablet-wide){
+                grid-column-end: span 1;
+            }
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3){
+                grid-column-end: span 2;
+
+                @include media-queries(tablet-wide){
+                    grid-column-end: span 1;
+                }
+            }
+
+            label{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 22px;
+                color: #4E5159;
+                margin-bottom: 8px;
+                display: inline-block;
+            }
+
+            input{
+                display: block;
+                width: 100%;
+                font-size: 18px;
+                line-height: 22px;
+                padding: 12px 0;
+                border-bottom: 1px solid rgba(224, 224, 224, 0.6);
+            }
+
+            select{
+                display: block;
+                width: 100%;
+                font-size: 18px;
+                line-height: 22px;
+                padding: 12px 0;
+                border: 0;
+                border-bottom: 1px solid rgba(224, 224, 224, 0.6);
+                border-radius: 0;
+                color: #868687;
+                background: transparent;
+            }
+        }
+
+        &-info{
+            margin-top: 4px;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.06em;
+            color: #868687;
+        }
+
+        textarea{
+            padding: 20px;
+            background: #FFFFFF;
+            box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.05);
+            font-size: 18px;
+            line-height: 22px;
+            height: 169px;
+            display: block; 
+            
+        }
+
+        button{
+            background: #071D49;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 69px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+}
+
+.order-print{
+    display: none;
+    padding: 100px 0 150px;
+    flex-direction: column;
+    position: relative;
+
+    @media print {
+        display: flex;
+    }
+
+    img{
+        align-self: start;
+    }
+
+    &-info{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-name{
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.15px;
+        color: #000000;
+    }
+
+    &-contact{
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.5px;
+        color: #646464;
+        margin-top: 8px;
+    }
+
+    &-date{
+        font-size: 11px;
+        line-height: 14px;
+        color: #4E5159;
+    }
+
+    &-list{
+        margin-top: 50px;
+
+        li{
+            display: flex;
+            align-items: center;
+            padding-bottom: 15px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid rgba(#4E5159, 0.2);
+
+            &:last-child{
+                margin: 0;
+            }
+
+            span{
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 14px;
+                letter-spacing: 0.4px;
+                color: #4E5159;
+                width: 45%;
+            }
+
+            p{
+                font-size: 12px;
+                line-height: 18px;
+                color: #18191F;
+            }
+        }
+    }
+
+    &-bottom{
+        padding-top: 20px;
+        margin-top: auto;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-top: 1px dashed #000000;
+        display: flex;
+        justify-content: flex-end;
+
+        span{
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 18px;
+            color: #4E5159;
+            margin-right: 22px;
+        }
+
+        p{
+            font-size: 10px;
+            line-height: 15px;
+            color: #4E5159;
+        }
+    }
+}

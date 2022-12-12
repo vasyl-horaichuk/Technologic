@@ -1,0 +1,716 @@
+@@include('./layout/head.html', {
+    'title': 'Technologic | Personal Area - Viewed Products'
+})
+
+<body>
+
+@@include('./layout/header.html')
+
+@@include('./layout/nav.html')
+
+<section class="pa">
+    <div class="container">
+        <div class="pa-inner">
+            <div class="pa-nav">
+                <div class="pa-user">
+                    <div class="pa-user--photo"></div>
+                    <div class="pa-user--info">
+                        <div class="pa-user--name">
+                            Анна
+                        </div>
+                        <div class="pa-user--email">
+                            anna@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <ul class="pa-nav--list">
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#account"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Особисті дані 
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#todo"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Мої замовлення
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#eye"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Переглянуті товари
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#dollar"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Бонуси
+                            </span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Список бажань
+                            </span>
+                            <p class="-notification">
+                                3
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Мої відгуки
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#logout"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Вихід
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pa-main">
+                <div class="pa-viewed-products-top">
+                    <div class="pa-title">
+                        Переглянуті товари
+                    </div>
+                    <button class="pa-viewed-products--clear">
+                        Очистити все
+                    </button>
+                </div>
+                <div class="pa-viewed-products">
+                    <div class="pa-viewed-products-items">
+                        <div class="product-card">
+                            <a href="#" class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-1.webp" type="image/webp">
+                                    <source srcset="img/products/product-1.png" type="image/png">
+                                    <img src="img/products/product-1.png" alt="img" loading="lazy">
+                                </picture>
+                            </a>
+                            <div class="product-card--info">
+                                <div class="product-card--actions">
+                                    <div class="product-card--code">
+                                        код:0007
+                                    </div>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul class="product-card--icons">
+                                    <li>
+                                        <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                                    </li>
+                                </ul>
+                                <div class="product-card--rate">
+                                    <ul class="product-card--stars">
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-empty">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div class="product-card--comments">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                        </svg>
+                                        <a href="#">
+                                            3
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="product-card--name">
+                                    Ручной 2D сканер штрих-кодов Datalogic Gryphon I GD4500 2D (безпроводний)
+                                </a>
+                                <div class="product-card--bottom">
+                                    <div class="product-card--price">
+                                        <div class="product-card--price-old">
+                                            -1 457,50 грн
+                                        </div>
+                                        <div class="product-card--price-actual">
+                                            24 500,00 грн
+                                        </div>
+                                    </div>
+                                    <button class="product-card--cart">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-1.webp" type="image/webp">
+                                    <source srcset="img/products/product-1.png" type="image/png">
+                                    <img src="img/products/product-1.png" alt="img" loading="lazy">
+                                </picture>
+                            </a>
+                            <div class="product-card--info">
+                                <div class="product-card--actions">
+                                    <div class="product-card--code">
+                                        код:0007
+                                    </div>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul class="product-card--icons">
+                                    <li>
+                                        <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                                    </li>
+                                </ul>
+                                <div class="product-card--rate">
+                                    <ul class="product-card--stars">
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-empty">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div class="product-card--comments">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                        </svg>
+                                        <a href="#">
+                                            3
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="product-card--name">
+                                    Ручной 2D сканер штрих-кодов Datalogic Gryphon I GD4500 2D (безпроводний)
+                                </a>
+                                <div class="product-card--bottom">
+                                    <div class="product-card--price">
+                                        <div class="product-card--price-old">
+                                            -1 457,50 грн
+                                        </div>
+                                        <div class="product-card--price-actual">
+                                            24 500,00 грн
+                                        </div>
+                                    </div>
+                                    <button class="product-card--cart">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-1.webp" type="image/webp">
+                                    <source srcset="img/products/product-1.png" type="image/png">
+                                    <img src="img/products/product-1.png" alt="img" loading="lazy">
+                                </picture>
+                            </a>
+                            <div class="product-card--info">
+                                <div class="product-card--actions">
+                                    <div class="product-card--code">
+                                        код:0007
+                                    </div>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul class="product-card--icons">
+                                    <li>
+                                        <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                                    </li>
+                                </ul>
+                                <div class="product-card--rate">
+                                    <ul class="product-card--stars">
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-empty">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div class="product-card--comments">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                        </svg>
+                                        <a href="#">
+                                            3
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="product-card--name">
+                                    Ручной 2D сканер штрих-кодов Datalogic Gryphon I GD4500 2D (безпроводний)
+                                </a>
+                                <div class="product-card--bottom">
+                                    <div class="product-card--price">
+                                        <div class="product-card--price-old">
+                                            -1 457,50 грн
+                                        </div>
+                                        <div class="product-card--price-actual">
+                                            24 500,00 грн
+                                        </div>
+                                    </div>
+                                    <button class="product-card--cart">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-1.webp" type="image/webp">
+                                    <source srcset="img/products/product-1.png" type="image/png">
+                                    <img src="img/products/product-1.png" alt="img" loading="lazy">
+                                </picture>
+                            </a>
+                            <div class="product-card--info">
+                                <div class="product-card--actions">
+                                    <div class="product-card--code">
+                                        код:0007
+                                    </div>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul class="product-card--icons">
+                                    <li>
+                                        <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                                    </li>
+                                </ul>
+                                <div class="product-card--rate">
+                                    <ul class="product-card--stars">
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-empty">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div class="product-card--comments">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                        </svg>
+                                        <a href="#">
+                                            3
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="product-card--name">
+                                    Ручной 2D сканер штрих-кодов Datalogic Gryphon I GD4500 2D (безпроводний)
+                                </a>
+                                <div class="product-card--bottom">
+                                    <div class="product-card--price">
+                                        <div class="product-card--price-old">
+                                            -1 457,50 грн
+                                        </div>
+                                        <div class="product-card--price-actual">
+                                            24 500,00 грн
+                                        </div>
+                                    </div>
+                                    <button class="product-card--cart">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-1.webp" type="image/webp">
+                                    <source srcset="img/products/product-1.png" type="image/png">
+                                    <img src="img/products/product-1.png" alt="img" loading="lazy">
+                                </picture>
+                            </a>
+                            <div class="product-card--info">
+                                <div class="product-card--actions">
+                                    <div class="product-card--code">
+                                        код:0007
+                                    </div>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul class="product-card--icons">
+                                    <li>
+                                        <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                                    </li>
+                                </ul>
+                                <div class="product-card--rate">
+                                    <ul class="product-card--stars">
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-empty">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div class="product-card--comments">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                        </svg>
+                                        <a href="#">
+                                            3
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="product-card--name">
+                                    Ручной 2D сканер штрих-кодов Datalogic Gryphon I GD4500 2D (безпроводний)
+                                </a>
+                                <div class="product-card--bottom">
+                                    <div class="product-card--price">
+                                        <div class="product-card--price-old">
+                                            -1 457,50 грн
+                                        </div>
+                                        <div class="product-card--price-actual">
+                                            24 500,00 грн
+                                        </div>
+                                    </div>
+                                    <button class="product-card--cart">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a href="#" class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-1.webp" type="image/webp">
+                                    <source srcset="img/products/product-1.png" type="image/png">
+                                    <img src="img/products/product-1.png" alt="img" loading="lazy">
+                                </picture>
+                            </a>
+                            <div class="product-card--info">
+                                <div class="product-card--actions">
+                                    <div class="product-card--code">
+                                        код:0007
+                                    </div>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="product-card--actions-button">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <ul class="product-card--icons">
+                                    <li>
+                                        <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                                    </li>
+                                    <li>
+                                        <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                                    </li>
+                                </ul>
+                                <div class="product-card--rate">
+                                    <ul class="product-card--stars">
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-filled">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                        <li>
+                                            <svg class="-empty">
+                                                <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div class="product-card--comments">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                        </svg>
+                                        <a href="#">
+                                            3
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="product-card--name">
+                                    Ручной 2D сканер штрих-кодов Datalogic Gryphon I GD4500 2D (безпроводний)
+                                </a>
+                                <div class="product-card--bottom">
+                                    <div class="product-card--price">
+                                        <div class="product-card--price-old">
+                                            -1 457,50 грн
+                                        </div>
+                                        <div class="product-card--price-actual">
+                                            24 500,00 грн
+                                        </div>
+                                    </div>
+                                    <button class="product-card--cart">
+                                        <svg>
+                                            <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('./layout/subscription-banner.html')
+
+@@include('./layout/footer.html')
+
+@@include('./layout/popups.html')
+
+@@include('./layout/fixed-elements.html')
+
+@@include('./layout/scripts.html')
+ 
+</body>
+    
+</html>

@@ -1,0 +1,102 @@
+@@include('./layout/head.html', {
+    'title': 'Technologic | Popups'
+})
+
+<body>
+
+<style>
+.popups-btns{
+    padding: 50px 0;
+    min-height: 100vh;
+    max-width: 70%;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.popups-btns button{
+    background: #071D49;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-weight: 600;
+    min-width: 120px;
+}
+</style> 
+
+<div class="popups-btns">
+    <button class="popup-open-trigger" data-popup="popup-login">
+        Вхід 
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-singup">
+        Реєстрація  
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-restore">
+        Восстановление 1
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-restore-2">
+        Восстановление 2
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-info-favorites">
+        Обране  
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-info-compare">
+        Порівняння  
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-info-cart">
+        Кошик порожній  
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-info-availability-notice">
+        Повідомити 
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-subscribe-fast-order">
+        Швидке замовлення
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-leave-feedback">
+        Залишити відгук 
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-question">
+        Задати питання
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-order-confirmed">
+        Замовлення прийняте
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-cart">
+        Кошик
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-thanks-review">
+        Дякуємо відгук
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-thanks-question">
+        Дякуємо запитання
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-choose-city">
+        Виберіть місто
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-test-equipment">
+        Тестувати
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-service">
+        Сервіс
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-profile">
+        Ховер личный кабинет
+    </button>
+    <button class="popup-open-trigger" data-popup="popup-compare-hover">
+        Ховер сравнение
+    </button>
+</div>
+
+@@include('./layout/popups.html')
+
+@@include('./layout/scripts.html')
+ 
+</body>
+    
+</html>

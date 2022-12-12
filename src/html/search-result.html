@@ -1,0 +1,2048 @@
+@@include('./layout/head.html', {
+    'title': 'Technologic | Search Result'
+})
+
+<body>
+
+@@include('./layout/header.html')
+
+@@include('./layout/nav.html')
+
+<section class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs-list">
+            <li>
+                <a href="#">
+                    Головна
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Пошук
+                </a>
+            </li>
+            <li>
+                Результати пошуку за запитом <span>'zebra'</span>. Знайдено товарів: 75
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="category">
+    <div class="container">
+        <div class="category-filter">
+            <div class="category-filter-top">
+                <div class="category-filter-back">
+                    <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.0566 22.5039L12.5468 22.5039L12.5468 20.5039L35.0566 20.5039L35.0566 22.5039Z" fill="#828282"></path>
+                        <path d="M17.2702 15.4673L18.6855 16.7215L13.329 21.4673L18.6855 26.2131L17.2702 27.4673L10.5002 21.4673L17.2702 15.4673Z" fill="#828282"></path>
+                    </svg>
+                </div>
+                <div class="s-title">
+                    Категорії
+                </div>
+            </div>
+            <ul class="category-filter-list">
+                <li>
+                    <span>
+                        ASAP POS
+                    </span>
+                    <svg>
+                        <use xlink:href="img/svgsprite/svgsprite.svg#close"></use>
+                    </svg>
+                </li>
+                <li>
+                    <span>
+                        В комплекті
+                    </span>
+                    <svg>
+                        <use xlink:href="img/svgsprite/svgsprite.svg#close"></use>
+                    </svg>
+                </li>
+                <li>
+                    <span>
+                        1D Imager
+                    </span>
+                    <svg>
+                        <use xlink:href="img/svgsprite/svgsprite.svg#close"></use>
+                    </svg>
+                </li>
+                <li>
+                    Скинути фільтри
+                </li>
+            </ul>
+            <div class="category-filter-inner">
+                <div class="category-filter-status">
+                    <div class="category-filter-checkbox">
+                        <input type="checkbox" id="category-filter-status-1">
+                        <label for="category-filter-status-1">
+                            Ручні сканери штрих-коду
+                        </label>
+                    </div>
+                    <div class="category-filter-checkbox">
+                        <input type="checkbox" id="category-filter-status-2">
+                        <label for="category-filter-status-2">
+                            Принтери етикеток
+                        </label>
+                    </div>
+                    <div class="category-filter-checkbox">
+                        <input type="checkbox" id="category-filter-status-3">
+                        <label for="category-filter-status-3">
+                            Термінали збору данних
+                        </label>
+                    </div>
+                    <div class="category-filter-checkbox">
+                        <input type="checkbox" id="category-filter-status-4">
+                        <label for="category-filter-status-4">
+                            Принтери пластикових карт
+                        </label>
+                    </div>
+                </div>
+                <div class="category-filter-block">
+                    <div class="category-filter-trigger">
+                        <span>
+                            Ціна
+                        </span>
+                        <svg>
+                            <use xlink:href="img/svgsprite/svgsprite.svg#chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="category-filter-dropdown">
+                        <div class="category-filter-price">
+                            <div class="category-filter-price-slider"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-filter-block">
+                    <div class="category-filter-trigger">
+                        <span>
+                            Виробник
+                        </span>
+                        <svg>
+                            <use xlink:href="img/svgsprite/svgsprite.svg#chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="category-filter-dropdown">
+                        <div class="category-filter-items">
+                            <div class="category-filter-checkbox">
+                                <input type="checkbox" id="category-producer-1" checked>
+                                <label for="category-producer-1">
+                                    Zebra
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-filter-actions">
+                <button>
+                    Очистити
+                </button>
+                <button>
+                    Показати
+                </button>
+            </div>
+        </div>
+        <div class="category-main">
+            <h2 class="s-title">
+                Результати пошуку: zebra
+            </h2>
+            <div class="category-main-filter">
+                <div class="category-sort">
+                    <div class="category-sort--title">
+                        Сортування: 
+                    </div>
+                    <select>
+                        <option value="За популярністю">
+                            За популярністю
+                        </option>
+                        <option value="Option 2">
+                            Option 2
+                        </option>
+                        <option value="Option 3">
+                            Option 3
+                        </option>
+                    </select>
+                </div>
+                <button class="category-filter-open">
+                    <svg>
+                        <use xlink:href="img/svgsprite/svgsprite.svg#filter"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="category-items">
+                <div class="product-card">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-9.webp" type="image/webp">
+                                    <source srcset="img/products/product-9.png" type="image/png">
+                                    <img src="img/products/product-9.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <button class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </button>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Ручной сканер штрих-кода ASAP POS E10
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    1 375,00 грн
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                </svg>
+                                <span>
+                                    Купити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-9.webp" type="image/webp">
+                                    <source srcset="img/products/product-9.png" type="image/png">
+                                    <img src="img/products/product-9.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Ручной сканер штрих-кода ASAP POS E10
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    1 375,00 грн
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                </svg>
+                                <span>
+                                    Купити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-9.webp" type="image/webp">
+                                    <source srcset="img/products/product-9.png" type="image/png">
+                                    <img src="img/products/product-9.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Беспроводной 2D сканер штрих-кода Supoin I2-B
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    2 392,50 грн
+                                </div>
+                            </div>
+                            <button class="product-card--cart -added">
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-10.webp" type="image/webp">
+                                    <source srcset="img/products/product-10.png" type="image/png">
+                                    <img src="img/products/product-10.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Сенсорный POS терминал ASAP ECO POS 15
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    16 225,00 грн
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                </svg>
+                                <span>
+                                    Купити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-9.webp" type="image/webp">
+                                    <source srcset="img/products/product-9.png" type="image/png">
+                                    <img src="img/products/product-9.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <button class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </button>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Ручной сканер штрих-кода ASAP POS E10
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    1 375,00 грн
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                </svg>
+                                <span>
+                                    Купити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-9.webp" type="image/webp">
+                                    <source srcset="img/products/product-9.png" type="image/png">
+                                    <img src="img/products/product-9.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Ручной сканер штрих-кода ASAP POS E10
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    1 375,00 грн
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                </svg>
+                                <span>
+                                    Купити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-9.webp" type="image/webp">
+                                    <source srcset="img/products/product-9.png" type="image/png">
+                                    <img src="img/products/product-9.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Беспроводной 2D сканер штрих-кода Supoin I2-B
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    2 392,50 грн
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                </svg>
+                                <span>
+                                    Купити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-10.webp" type="image/webp">
+                                    <source srcset="img/products/product-10.png" type="image/png">
+                                    <img src="img/products/product-10.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Сенсорный POS терминал ASAP ECO POS 15
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    16 225,00 грн
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#basket"></use>
+                                </svg>
+                                <span>
+                                    Купити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card -unavailable">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-9.webp" type="image/webp">
+                                    <source srcset="img/products/product-9.png" type="image/png">
+                                    <img src="img/products/product-9.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Беспроводной 2D сканер штрих-кода ASAP POS E22W
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    2 805,00 грн
+                                </div>
+                                <div class="product-card--availability">
+                                    Немає в наявності
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#mail"></use>
+                                </svg>
+                                <span>
+                                    Замовити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card -unavailable">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-10.webp" type="image/webp">
+                                    <source srcset="img/products/product-10.png" type="image/png">
+                                    <img src="img/products/product-10.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Беспроводной 2D сканер штрих-кода Supoin I2-B
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    2 392,50 грн
+                                </div>
+                                <div class="product-card--availability">
+                                    У продажу з 14.07
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#clock"></use>
+                                </svg>
+                                <span>
+                                    Замовити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card -unavailable">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-9.webp" type="image/webp">
+                                    <source srcset="img/products/product-9.png" type="image/png">
+                                    <img src="img/products/product-9.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Беспроводной 2D сканер штрих-кода ASAP POS E22W
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    2 805,00 грн
+                                </div>
+                                <div class="product-card--availability">
+                                    Немає в наявності
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#mail"></use>
+                                </svg>
+                                <span>
+                                    Замовити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card -unavailable">
+                    <div class="product-card-slider">
+                        <div class="product-card-slider--inner">
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-10.webp" type="image/webp">
+                                    <source srcset="img/products/product-10.png" type="image/png">
+                                    <img src="img/products/product-10.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-8.webp" type="image/webp">
+                                    <source srcset="img/products/product-8.png" type="image/png">
+                                    <img src="img/products/product-8.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="product-card--photo">
+                                <picture>
+                                    <source srcset="img/products/product-7.webp" type="image/webp">
+                                    <source srcset="img/products/product-7.png" type="image/png">
+                                    <img src="img/products/product-7.png" alt="img" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="product-card-slider--navigation -prev">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 13.5L9 26" stroke="#1E85DA"/>
+                            </svg> 
+                        </div>
+                        <button class="product-card-slider--navigation -next">
+                            <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 26L9 13.5L1 0.999999" stroke="#1E85DA"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card--info">
+                        <div class="product-card--actions">
+                            <div class="product-card--code">
+                                код:0007
+                            </div>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#compare"></use>
+                                </svg>
+                            </button>
+                            <button class="product-card--actions-button">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="product-card--icons">
+                            <li>
+                                <img src="img/product-card/icons/icon-1.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-2.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-3.svg" alt="ico">
+                            </li>
+                            <li>
+                                <img src="img/product-card/icons/icon-4.svg" alt="ico">
+                            </li>
+                        </ul>
+                        <div class="product-card--rate">
+                            <ul class="product-card--stars">
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-filled">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="-empty">
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#star"></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                            <div class="product-card--comments">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                                <a href="#">
+                                    3
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="product-card--name">
+                            Беспроводной 2D сканер штрих-кода Supoin I2-B
+                        </a>
+                        <div class="product-card--bottom">
+                            <div class="product-card--price">
+                                <div class="product-card--price-actual">
+                                    2 392,50 грн
+                                </div>
+                                <div class="product-card--availability">
+                                    У продажу з 14.07
+                                </div>
+                            </div>
+                            <button class="product-card--cart -text">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#clock"></use>
+                                </svg>
+                                <span>
+                                    Замовити
+                                </span>
+                            </button>
+                        </div>
+                        <ul class="product-card--details">
+                            <li>
+                                <span>Тип сканера:</span> 2D Image
+                            </li>
+                            <li>
+                                <span>Тип елемента, що зчитує:</span> Linear Imager
+                            </li>
+                            <li>
+                                <span>Інтерфейс підключення:</span> USB; RS-232
+                            </li>
+                            <li>
+                                <span>Макс. дальність сканування:</span> до 170 мм
+                            </li>
+                            <li>
+                                <span>Розпізнавання 2D кодів:</span> PDF417, Data Matrix, QR Code, тощо
+                            </li>
+                            <li>    
+                                <span>Клас захисту IP:</span> IP65
+                            </li>
+                            <li>
+                                <span>Тест на падіння:</span> Безліч раз на бетон з висоти 1,5 метра
+                            </li>
+                            <li>
+                                <span>Діапазон робочих температур:</span> від -20 ° С до 45 ° С
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page-navigation">
+                <button>
+                    Спочатку
+                </button>
+                <ul class="page-navigation--list">
+                    <li>
+                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799992 6.77778C0.799992 6.98437 0.887492 7.17882 1.03749 7.32465L6.6375 12.7691C6.7875 12.9149 6.9875 13 7.2 13C7.6375 13 8 12.6476 8 12.2222L8 1.33333C8 0.907986 7.6375 0.555555 7.2 0.555555C6.9875 0.555555 6.7875 0.640625 6.6375 0.786458L1.03749 6.2309C0.887492 6.37674 0.799992 6.57118 0.799992 6.77778Z" fill="#071D49"/>
+                        </svg>   
+                    </li>
+                    <li class="active">
+                        6
+                    </li>
+                    <li>
+                        7
+                    </li>
+                    <li>
+                        8
+                    </li>
+                    <li>
+                        9
+                    </li>
+                    <li>
+                        10
+                    </li>
+                    <li>
+                        ...
+                    </li>
+                    <li>
+                        33
+                    </li>
+                    <li>
+                        34
+                    </li>
+                    <li>
+                        35
+                    </li>
+                    <li>
+                        36
+                    </li>
+                    <li>
+                        37
+                    </li>
+                    <li>
+                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.20001 6.77778C7.20001 6.98437 7.11251 7.17882 6.96251 7.32465L1.3625 12.7691C1.2125 12.9149 1.0125 13 0.800001 13C0.3625 13 0 12.6476 0 12.2222L0 1.33333C0 0.907986 0.3625 0.555555 0.800001 0.555555C1.0125 0.555555 1.2125 0.640625 1.3625 0.786458L6.96251 6.2309C7.11251 6.37674 7.20001 6.57118 7.20001 6.77778Z" fill="#071D49"/>
+                        </svg>
+                    </li>
+                </ul>
+                <button>
+                    Останній
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('./layout/subscription-banner.html')
+
+@@include('./layout/footer.html')
+
+@@include('./layout/popups.html')
+
+@@include('./layout/fixed-elements.html')
+
+@@include('./layout/scripts.html')
+ 
+</body>
+    
+</html>

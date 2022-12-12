@@ -1,0 +1,319 @@
+@@include('./layout/head.html', {
+    'title': 'Technologic | Personal Area - Data'
+})
+
+<body>
+
+@@include('./layout/header.html')
+
+@@include('./layout/nav.html')
+
+<section class="pa">
+    <div class="container">
+        <div class="pa-inner">
+            <div class="pa-nav">
+                <div class="pa-user">
+                    <div class="pa-user--photo"></div>
+                    <div class="pa-user--info">
+                        <div class="pa-user--name">
+                            Анна
+                        </div>
+                        <div class="pa-user--email">
+                            anna@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <ul class="pa-nav--list">
+                    <li class="active">
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#account"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Особисті дані 
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#todo"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Мої замовлення
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#eye"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Переглянуті товари
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#dollar"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Бонуси
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Список бажань
+                            </span>
+                            <p class="-notification">
+                                3
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Мої відгуки
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#logout"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Вихід
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pa-main">
+                <div class="pa-title">
+                    Особисті дані
+                </div>
+                <div class="pa-data">
+                    <div class="pa-data-block">
+                        <div class="pa-data-block--title">
+                            <img src="img/icons/user-settings.svg" alt="ico">
+                            <span>
+                                Особисті дані
+                            </span>
+                            <div class="pa-data-block--edit">
+                                <button class="checkout-cart-edit">
+                                    <svg>
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#edit"></use>
+                                    </svg>
+                                    <span>Редагувати</span>
+                                </button>
+                            </div>
+                        </div>
+                        <form action="#" class="pa-data-form">
+                            <div class="pa-data-form--block">
+                                <label for="name">
+                                    ім'я
+                                </label>
+                                <input type="text" id="name" value="Ана">
+                            </div>
+                            <div class="pa-data-form--block">
+                                <label for="surname">
+                                    Прізвище
+                                </label>
+                                <input type="text" id="surname" value="Романовська">
+                            </div>
+                            <div class="pa-data-form--block has-error">
+                                <label for="surname-2">
+                                    По батькові
+                                </label>
+                                <input type="text" id="surname-2" value="">
+                            </div>
+                            <div class="pa-data-form--block">
+                                <label for="birth">
+                                    Дата народження
+                                </label>
+                                <input type="date" id="birth" value="1979-08-21">
+                            </div>
+                            <div class="pa-data-form--block">
+                                <label for="sex">
+                                    Стать
+                                </label>
+                                <input type="text" id="sex" value="Мужской">
+                            </div>
+                            <div class="pa-data-form--block">
+                                <label for="language">
+                                    Мова спілкування
+                                </label>
+                                <input type="text" id="language" value="Русский">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pa-data-block">
+                        <div class="pa-data-block--title">
+                            <img src="img/icons/mail-send.svg" alt="ico">
+                            <span>
+                                Контакти
+                            </span>
+                            <div class="pa-data-block--edit">
+                                <button class="checkout-cart-edit">
+                                    <svg>
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#edit"></use>
+                                    </svg>
+                                    <span>Редагувати</span>
+                                </button>
+                            </div>
+                        </div>
+                        <form action="#" class="pa-data-form">
+                            <div class="pa-data-form--block">
+                                <label for="phone-1">
+                                    Подтвержденный телефон
+                                </label>
+                                <input type="text" id="phone-1" value="+38 050 662 44 49">
+                            </div>
+                            <div class="pa-data-form--block">
+                                <label for="phone-2">
+                                    Дополнительный телефон
+                                </label>
+                                <input type="text" id="phone-2" value="+38 067 659 84 36">
+                            </div>
+                            <div class="pa-data-form--block">
+                                <label for="email">
+                                    Электронная почта
+                                </label>
+                                <input type="text" id="email" value="anna@gmail.com">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pa-data-block">
+                        <div class="pa-data-block--title">
+                            <img src="img/icons/truck.svg" alt="ico">
+                            <span>
+                                Адреса доставки
+                            </span>
+                            <div class="pa-data-block--edit">
+                                <button class="checkout-cart-edit">
+                                    <svg>
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#edit"></use>
+                                    </svg>
+                                    <span>Редагувати</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pa-data-block">
+                        <div class="pa-data-block--title">
+                            <img src="img/icons/lock-password.svg" alt="ico">
+                            <span>
+                                Логін
+                            </span>
+                            <div class="pa-data-block--edit">
+                                <button class="checkout-cart-edit">
+                                    <svg>
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#edit"></use>
+                                    </svg>
+                                    <span>Редагувати</span>
+                                </button>
+                            </div>
+                        </div>
+                        <form action="#" class="pa-data-form">
+                            <div class="pa-data-form--block">
+                                <label for="phone-login">
+                                    Логин (телефон)
+                                </label>
+                                <input type="text" id="phone-login" value="+38 050 662 44 49">
+                            </div>
+                            <div class="pa-data-form--block">
+                                <label for="email-login">
+                                    Логин (электронная почта)
+                                </label>
+                                <input type="text" id="email-login" value="kostya@gmail.com">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pa-data-block">
+                        <div class="pa-data-block--title">
+                            <img src="img/icons/bank-card.svg" alt="ico">
+                            <span>
+                                Мої банківські карти
+                            </span>
+                            <div class="pa-data-block--edit">
+                                <button class="checkout-cart-edit">
+                                    <svg>
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#edit"></use>
+                                    </svg>
+                                    <span>Редагувати</span>
+                                </button>
+                            </div>
+                        </div>
+                        <form action="#" class="pa-data-form">
+                            <div class="pa-data-form--block -mastercard">
+                                <input type="text" id="card" value="•••• ••••  •••• 1542">
+                            </div>
+                        </form>
+                    </div>
+                    <p class="pa-data-info">
+                        Зв'язуйте обліковий запис Тechnologic з обліковими записами соцмереж і заходьте на сайт, як користувач Facebook або Google
+                    </p>
+                    <div class="pa-data-social">
+                        <div class="pa-data-social--card">
+                            <img src="img/icons/facebook.svg" alt="logo">
+                            <span>
+                                Facebook
+                            </span>
+                            <p>
+                                Звязати з соцмережею
+                            </p>
+                        </div>
+                        <div class="pa-data-social--card">
+                            <img src="img/icons/google.svg" alt="logo">
+                            <span>
+                                Google
+                            </span>
+                            <p>
+                                Звязати з соцмережею
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('./layout/subscription-banner.html')
+
+@@include('./layout/footer.html')
+
+@@include('./layout/popups.html')
+
+@@include('./layout/fixed-elements.html')
+
+@@include('./layout/scripts.html')
+ 
+</body>
+    
+</html>

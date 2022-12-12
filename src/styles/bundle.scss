@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* Utils */
+@import "./utils/variables";
+@import "./utils/mixins";
+
+/* Vendor */
+@import "../../node_modules/swiper/swiper-bundle.min";
+@import "../../node_modules/nouislider/dist/nouislider.min";
+@import "../../node_modules/simplebar/dist/simplebar.min";
+
+/* Base */
+@import "./base/reset";
+@import "./base/main";
+@import "./base/forms";
+// @import "./base/typography";
+
+/* Components */
+@import "./components/product-card";
+@import "./components/fixed-elements";
+@import "./components/article-card";
+@import "./components/promotion-card";
+@import "./components/buttons";
+
+/* Layout */
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/subscription-banner";
+@import "./layout/footer";
+@import "./layout/popups";
+@import "./layout/breadcrumbs";
+@import "./layout/additional-information";
+@import "./layout/have-question";
+@import "./layout/map";
+@import "./layout/blog-header";
+@import "./layout/blog-footer";
+
+/* Pages */
+@import "./pages/main-page";
+@import "./pages/catalog";
+@import "./pages/category";
+@import "./pages/product";
+@import "./pages/personal-area";
+@import "./pages/checkout";
+@import "./pages/about";
+@import "./pages/contacts";
+@import "./pages/service";
+@import "./pages/testing";
+@import "./pages/automation";
+@import "./pages/brands";
+@import "./pages/brand";
+@import "./pages/blog-categories";
+@import "./pages/blog-news";
+@import "./pages/blog-video";
+@import "./pages/blog-article";
+@import "./pages/blog-article";
+@import "./pages/order";
+@import "./pages/lending";
+@import "./pages/delivery";
+@import "./pages/payment";
+@import "./pages/return-exchange";
+@import "./pages/warranty";
+@import "./pages/promotions";
+@import "./pages/promotion";

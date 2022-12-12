@@ -1,0 +1,217 @@
+@@include('./layout/head.html', {
+    'title': 'Technologic | Personal Area - Feedbacks'
+})
+
+<body>
+
+@@include('./layout/header.html')
+
+@@include('./layout/nav.html')
+
+<section class="pa">
+    <div class="container">
+        <div class="pa-inner">
+            <div class="pa-nav">
+                <div class="pa-user">
+                    <div class="pa-user--photo"></div>
+                    <div class="pa-user--info">
+                        <div class="pa-user--name">
+                            Анна
+                        </div>
+                        <div class="pa-user--email">
+                            anna@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <ul class="pa-nav--list">
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#account"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Особисті дані 
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#todo"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Мої замовлення
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#eye"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Переглянуті товари
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#dollar"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Бонуси
+                            </span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Список бажань
+                            </span>
+                            <p class="-notification">
+                                3
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Мої відгуки
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#logout"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Вихід
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pa-main">
+                <div class="pa-title pa-feedbacks-main-title">
+                    Мої відгуки
+                </div>
+                <div class="pa-feedbacks">
+                    <div class="pa-feedbacks-card">
+                        <div class="pa-feedbacks-card--main">
+                            <div class="pa-feedbacks-card--photo">
+                                <img src="img/product/photo-1.jpg" alt="img">
+                            </div>
+                            <div class="pa-feedbacks-card--title">
+                                Newland MT65 Beluga III 2D
+                            </div>
+                            <button class="pa-feedbacks--leave">
+                                Залишити відгук
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pa-feedbacks-card">
+                        <div class="pa-feedbacks-card--main">
+                            <div class="pa-feedbacks-card--photo">
+                                <img src="img/product/photo-1.jpg" alt="img">
+                            </div>
+                            <div class="pa-feedbacks-card--title">
+                                Newland MT65 Beluga III 2D 
+                            </div>
+                            <div class="pa-feedbacks-card--comment">
+                                <p>
+                                    Замовляю не вперше. Використовую в невеликих магазинах. Все працює 
+                                </p>
+                                <div class="pa-feedbacks-card--comment-ico">
+                                    <span>
+                                        1
+                                    </span>
+                                    <svg>
+                                        <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <button class="pa-feedbacks-card--arrow">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#chevron-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="pa-feedbacks-card--dropdown">
+                            <div class="pa-feedbacks-card--name">
+                                Романовська Олександра
+                            </div>
+                            <hr>
+                            <div class="pa-feedbacks-card--text">
+                                Замовляю не вперше. Використовую в невеликих магазинах та кіосках. Все 
+                            </div>
+                            <button class="pa-feedbacks-card--actions">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#reply"></use>
+                                </svg>
+                                Відповісти
+                            </button>
+                            <hr>
+                            <div class="pa-feedbacks-card--reply">
+                                <div class="pa-feedbacks-card--name">
+                                    Олена
+                                </div>
+                                <div class="pa-feedbacks-card--text">
+                                    Скільки часу вже використовуєте?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pa-feedbacks-card">
+                        <div class="pa-feedbacks-card--main">
+                            <div class="pa-feedbacks-card--photo">
+                                <img src="img/product/photo-1.jpg" alt="img">
+                            </div>
+                            <div class="pa-feedbacks-card--title">
+                                Newland MT65 Beluga III 2D
+                            </div>
+                            <button class="pa-feedbacks--leave">
+                                Залишити відгук
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('./layout/subscription-banner.html')
+
+@@include('./layout/footer.html')
+
+@@include('./layout/popups.html')
+
+@@include('./layout/fixed-elements.html')
+
+@@include('./layout/scripts.html')
+ 
+</body>
+    
+</html>

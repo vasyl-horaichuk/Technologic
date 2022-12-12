@@ -1,0 +1,182 @@
+.blog-video{
+    padding: 60px 0px 50px;
+
+    @include media-queries(phone-wide){
+        padding: 10px 0px 20px;
+    }
+
+    .s-title{
+        text-align: center;
+        margin-bottom: 50px;
+
+        @include media-queries(phone-wide){
+            margin-bottom: 15px;
+        }
+    }
+
+    &-card{
+        max-width: 957px;
+        margin: 0 auto 50px;
+        background: #FFFFFF;
+        border: 1px solid rgba(224, 224, 224, 0.6);
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 50px;
+
+        @include media-queries(phone-wide){
+            margin-bottom: 15px;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &--preview{
+            display: block;
+            position: relative;
+
+            &:after{
+                display: block;
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80px;
+                height: 80px;
+                pointer-events: none;
+                background: url(../img/icons/youtube.svg) no-repeat center center;
+    
+                @include media-queries(phone-wide){
+                    background-size: 43px auto;
+                }
+            }
+        }
+
+        &--photo{
+            width: 100%;
+            display: block;
+        }
+
+        &--top{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            left: 34px;
+            right: 34px;
+
+            @include media-queries(phone-wide){
+                top: 10px;
+                left: 10px;
+                right: 10px;
+            }
+
+            img{
+                width: 36px;
+                min-width: 36px;
+                height: 36px;
+                display: block;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+
+                @include media-queries(phone-wide){
+                    width: 18px;
+                    height: 18px;
+                    min-width: 18px;
+                    margin-right: 8px;
+                }
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                align-self: center;
+
+                @include media-queries(phone-wide){
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+
+        &--label{
+            background: rgba(0, 0, 0, 0.45);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FCFEFF;
+            padding: 9px 7px;
+            display: flex;
+            align-items: center;
+
+            @include media-queries(phone-wide){
+                font-size: 12px;
+                line-height: 14px;
+                padding: 6px 4px;
+            }
+
+            span{
+                margin-right: 7px;
+
+                @include media-queries(phone-wide){
+                    margin-right: 3px;
+                }
+            }
+
+            img{
+
+                @include media-queries(phone-wide){
+                    height: 14px;
+                }
+            }
+        }
+
+        &--title{
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 24px;
+            color: #4E5159;
+            padding: 20px 35px 30px;
+
+            @include media-queries(phone-wide){
+                font-size: 18px;
+                line-height: 24px;
+                padding: 10px 13px 39px;
+            }
+        }
+    }
+
+    &-show-more{
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 29px;
+        color: #FFFFFF;
+        background: #071D49;
+        border-radius: 6px;
+        padding: 7px 20px;
+        margin: 50px auto 0;
+        display: flex;
+        align-items: center;
+
+        @include media-queries(phone-wide){
+            margin-top: 20px;
+        }
+
+        svg{
+            width: 24px;
+            height: 24px;
+            fill: #FCFEFF;
+            margin-right: 10px;
+        }
+    }
+}

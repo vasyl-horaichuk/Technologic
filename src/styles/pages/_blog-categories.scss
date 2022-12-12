@@ -1,0 +1,122 @@
+.blog-categories{
+    padding: 60px 0px 90px;
+
+    @include media-queries(phone-wide){
+        padding: 20px 0;
+    }
+
+    &-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px 70px;
+        margin-top: 30px;
+
+        @include media-queries(laptop){
+            gap: 50px 30px
+        }
+
+        @include media-queries(tablet-wide){
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media-queries(phone-wide){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+    }
+
+    &-card{
+        display: block;
+
+        &:hover{
+
+            .blog-categories-card--photo{
+                background: #DADFDF;
+
+                img{
+                    transform: scale(1.1);
+
+                    @include media-queries(tablet){
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            p{
+                color: #FFCF00;
+            }
+        }
+
+        &--photo{
+            background: #F0F0F0;
+            box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            transition: 0.3s;
+
+            @include media-queries(tablet-wide){
+                height: 210px;
+            }
+
+            @include media-queries(phone-wide){
+                padding: 10px;
+                height: 170px;
+            }
+
+            picture{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                width: 210px;
+                height: 210px;
+                object-fit: cover;
+                transition: 0.3s;
+
+                @include media-queries(tablet){
+                    width: 130px;
+                    height: 130px;
+                }
+            }
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 600;
+            color: #4E5159;
+            margin-top: 20px;
+            transition: 0.3s;
+
+            @include media-queries(phone-wide){
+                font-size: 13px;
+                line-height: 18px;
+                margin-top: 10px;
+            }
+        }
+
+        span{
+            font-size: 16px;
+            line-height: 21px;
+            color: #828282;
+            display: block;
+            margin-top: 10px;
+
+            @include media-queries(phone-wide){
+                font-size: 13px;
+                margin-top: 5px;
+            }
+        }
+    }
+}

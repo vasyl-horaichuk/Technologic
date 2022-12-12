@@ -1,0 +1,194 @@
+@@include('./layout/head.html', {
+    'title': 'Technologic | Order Courier'
+})
+
+<body>
+
+<section class="order">
+    <div class="order-container">
+        <h1 class="order-title">
+            Реєстрація сервісу на виклик курьєра 
+        </h1>
+        <div class="order-info">
+            <a href="#" class="order-logo">
+                <img src="img/logo/logo-dark.svg" alt="ico">
+            </a>
+            <div class="order-actions">
+                <button class="order-print-trigger">
+                    <span>
+                        Роздрукувати
+                    </span>
+                    <svg>
+                        <use xlink:href="img/svgsprite/svgsprite.svg#printer"></use>
+                    </svg>
+                </button>
+                <button class="order-download-trigger">
+                    <span>
+                        Зберігти
+                    </span>
+                    <svg>
+                        <use xlink:href="img/svgsprite/svgsprite.svg#download"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <form action="#" class="order-form">
+            <div class="order-form-block">
+                <label for="surname-1">
+                    Прізвище
+                </label>
+                <input type="text" id="surname-1" placeholder="Прізвище">
+            </div>
+            <div class="order-form-block">
+                <label for="name">
+                    Ім'я *
+                </label>
+                <input type="text" id="name" placeholder="Ім'я">
+                <p class="order-form-info">
+                    обов'язкове поле
+                </p>
+            </div>
+            <div class="order-form-block">
+                <label for="surname-2">
+                    По батькові
+                </label>
+                <input type="text" id="surname-2" placeholder="По батькові">
+            </div>
+            <div class="order-form-block">
+                <label for="phone">
+                    Телефон *
+                </label>
+                <input type="text" id="phone" placeholder="Телефон">
+                <p class="order-form-info">
+                    Приклад: (012) 123-1234
+                </p>
+            </div>
+            <div class="order-form-block">
+                <label for="email">
+                    Email * 
+                </label>
+                <input type="email" id="email" placeholder="example@technologic.com">
+                <p class="order-form-info">
+                    На вказану електронну скриньку прийде лист з підтвердженням реєстрації.
+                </p>
+            </div>
+            <div class="order-form-block">
+                <label for="address">
+                    Адреса *
+                </label>
+                <input type="text" id="address" placeholder="Місто, вулиця номер будинку,підїзду, квартири">
+                <p class="order-form-info">
+                    Приклад: м. Київ, вул. Заболотного, підїзд №8, кв. 31
+                </p>
+            </div>
+            <div class="order-form-block">
+                <label for="date">
+                    Дата 
+                </label>
+                <input type="date" id="date">
+                <p class="order-form-info">
+                    Вкажіть дату коли курьєр може забрати товар
+                </p>
+            </div>
+            <div class="order-form-block">
+                <label for="model">
+                    Бренд та модель пристрою * 
+                </label>
+                <input type="text" id="model" placeholder="dgidvdjvoidjv;ld,;vldm;vdjoivdlvm">
+                <p class="order-form-info">
+                    Вкажіть назву виробника (бренду) та моделі пристрою, які зазаначені на упаковці або у розрахункову документі (у чеку)
+                </p>
+            </div>
+            <div class="order-form-block">
+                <label for="imei">
+                    IMEI або серійний номер * 
+                </label>
+                <input type="text" id="imei" placeholder="XXXXXXXXXXXXXX">
+                <p class="order-form-info">
+                    Вкажіть IMEI або серійний номер пристрою, до якого придбався сервіс: <br>
+                    1. Техніка - Серійний номер знаходиться на коробці та на самій техніці <br>
+                    2. Якщо сервіс придбано на Маркетплейс – вказати ID оплати
+                </p>
+            </div>
+            <textarea class="-fluid" placeholder="Опишіть поломку/бажану дату виїзду/іншу додаткову інформацію"></textarea>
+            <button type="submit" class="-fluid">
+                Записатися на ремонт
+            </button>
+        </form>
+    </div>
+</section>
+
+<section class="order-print">
+    <img src="img/logo/logo-dark.svg" alt="ico">
+    <div class="order-print-info">
+        <div class="order-print-user">
+            <div class="order-print-name">
+                Романова Анна Олегівна
+            </div>
+            <div class="order-print-contact">
+                romanovaanna@gmail.com
+            </div>
+            <div class="order-print-contact">
+                +38 050-250-36-94
+            </div>
+        </div>
+        <div class="order-print-date">
+            <b>
+                Дата створення
+            </b>
+            30/12/2020
+        </div>
+    </div>
+    <ul class="order-print-list">
+        <li>
+            <span>
+                Бренд та модель пристрою
+            </span>
+            <p>
+                Ручной сканер штрих-кода Newland HR1060 Sardina
+            </p>
+        </li>
+        <li>
+            <span>
+                IMEI або серійний номер 
+            </span>
+            <p>
+                ХХХХХХХХХХХХ
+            </p>
+        </li>
+        <li>
+            <span>
+                Сервіс
+            </span>
+            <p>
+                Запит на експрес ремонт
+            </p>
+        </li>
+        <li>
+            <span>
+                Опис причини поломки
+            </span>
+            <p>
+                Не працює лазер
+            </p>
+        </li>
+    </ul>
+    <div class="order-print-bottom">
+        <span>
+            Відправка обладнання здійснюється на:
+        </span>
+        <p>
+            ТОВ «Технолоджик» <br>
+            м. Київ, вул.,Терьохіна 8, офіс 26  <br>
+            Відділення нової пошти: №146  <br>
+            Євген Осадчий  <br>
+            тел.: 096 213-75-55
+        </p>
+    </div>
+</section>
+
+@@include('./layout/scripts.html')
+ 
+</body>
+    
+</html>

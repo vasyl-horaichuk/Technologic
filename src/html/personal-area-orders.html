@@ -1,0 +1,495 @@
+@@include('./layout/head.html', {
+    'title': 'Technologic | Personal Area - Orders'
+})
+
+<body>
+
+@@include('./layout/header.html')
+
+@@include('./layout/nav.html')
+
+<section class="pa">
+    <div class="container">
+        <div class="pa-inner">
+            <div class="pa-nav">
+                <div class="pa-user">
+                    <div class="pa-user--photo"></div>
+                    <div class="pa-user--info">
+                        <div class="pa-user--name">
+                            Анна
+                        </div>
+                        <div class="pa-user--email">
+                            anna@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <ul class="pa-nav--list">
+                    <li class="active">
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#account"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Особисті дані 
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#todo"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Мої замовлення
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#eye"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Переглянуті товари
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#dollar"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Бонуси
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#favorites"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Список бажань
+                            </span>
+                            <p class="-notification">
+                                3
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#comment"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Мої відгуки
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="-ico">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#logout"></use>
+                                </svg>
+                            </div>
+                            <span>
+                                Вихід
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pa-main">
+                <div class="pa-title">
+                    Мої замовлення
+                </div>
+                <div class="pa-orders">
+                    <ul class="pa-orders--nav">
+                        <li class="active">
+                            Всі замовлення
+                        </li>
+                        <li>
+                            Гарантія та обмін
+                        </li>
+                    </ul>
+                    <div class="pa-orders-card">
+                        <div class="pa-orders-card-main">
+                            <div class="pa-orders-card-main--status">
+                                <p>
+                                    № 706 500 599 от 10.06.21
+                                </p>
+                                <span class="-done">
+                                    Виконано
+                                </span>
+                            </div>
+                            <div class="pa-orders-card-main--price">
+                                <p>
+                                    Сума замовлення
+                                </p>
+                                <span>
+                                    20 0000 грн
+                                </span>
+                            </div>
+                            <div class="pa-orders-card--photo">
+                                <img src="img/product/photo-1.jpg" alt="img">
+                            </div>
+                            <button class="pa-orders-card--arrow">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#chevron-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="pa-orders-card-dropdown">
+                            <div class="pa-orders-card-dropdown--inner">
+                                <div>
+                                    <a href="#" class="pa-orders-card--history">
+                                        Исторія замовлення
+                                    </a>
+                                    <p class="pa-orders-card-dropdown-title">
+                                        Информація про замовлення
+                                    </p>
+                                    <ul class="pa-orders-card--info">
+                                        <li>
+                                            ТТН 20450399616712
+                                        </li>
+                                        <li>
+                                            Самовивіз з Нової Пошти
+                                        </li>
+                                        <li>
+                                            Київ, Віддiлення №164, вул.
+                                        </li>
+                                        <li>
+                                            Петрова Анна Сергіївна
+                                        </li>
+                                        <li>
+                                            0502823698
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="pa-orders-card-product">
+                                        <div class="pa-orders-card--photo">
+                                            <img src="img/product/photo-1.jpg" alt="img">
+                                        </div>
+                                        <div class="pa-orders-card-product--name">
+                                            Newland MT65 Beluga III 2D
+                                        </div>
+                                        <ul class="pa-orders-card-product--list">
+                                            <li>
+                                                <p class="pa-orders-card-dropdown-title">
+                                                    Ціна
+                                                </p>
+                                                <span>
+                                                    20 0000 грн
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <p class="pa-orders-card-dropdown-title">
+                                                    Кількцість
+                                                </p>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <p class="pa-orders-card-dropdown-title">
+                                                    Сума
+                                                </p>
+                                                <span>
+                                                    20 0000 грн
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="pa-orders-card--check">
+                                        <li>
+                                            <span>
+                                                Оплатa
+                                            </span>
+                                            Оплата при отриманні товару
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Доставка
+                                            </span>
+                                            За тарифами перевізника
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Всього
+                                            </span>
+                                            20 0000 грн
+                                        </li>
+                                    </ul>
+                                    <button class="pa-orders-card--repeat">
+                                        Повторити замовлення
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pa-orders-card">
+                        <div class="pa-orders-card-main">
+                            <div class="pa-orders-card-main--status">
+                                <p>
+                                    № 706 500 599 от 10.06.21
+                                </p>
+                                <span class="-done">
+                                    Виконано
+                                </span>
+                            </div>
+                            <div class="pa-orders-card-main--price">
+                                <p>
+                                    Сума замовлення
+                                </p>
+                                <span>
+                                    20 0000 грн
+                                </span>
+                            </div>
+                            <div class="pa-orders-card--photo">
+                                <img src="img/product/photo-1.jpg" alt="img">
+                            </div>
+                            <button class="pa-orders-card--arrow">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#chevron-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="pa-orders-card-dropdown">
+                            <div class="pa-orders-card-dropdown--inner">
+                                <div>
+                                    <a href="#" class="pa-orders-card--history">
+                                        Исторія замовлення
+                                    </a>
+                                    <p class="pa-orders-card-dropdown-title">
+                                        Информація про замовлення
+                                    </p>
+                                    <ul class="pa-orders-card--info">
+                                        <li>
+                                            ТТН 20450399616712
+                                        </li>
+                                        <li>
+                                            Самовивіз з Нової Пошти
+                                        </li>
+                                        <li>
+                                            Київ, Віддiлення №164, вул.
+                                        </li>
+                                        <li>
+                                            Петрова Анна Сергіївна
+                                        </li>
+                                        <li>
+                                            0502823698
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="pa-orders-card-product">
+                                        <div class="pa-orders-card--photo">
+                                            <img src="img/product/photo-1.jpg" alt="img">
+                                        </div>
+                                        <div class="pa-orders-card-product--name">
+                                            Newland MT65 Beluga III 2D
+                                        </div>
+                                        <ul class="pa-orders-card-product--list">
+                                            <li>
+                                                <p class="pa-orders-card-dropdown-title">
+                                                    Ціна
+                                                </p>
+                                                <span>
+                                                    20 0000 грн
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <p class="pa-orders-card-dropdown-title">
+                                                    Кількцість
+                                                </p>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <p class="pa-orders-card-dropdown-title">
+                                                    Сума
+                                                </p>
+                                                <span>
+                                                    20 0000 грн
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="pa-orders-card--check">
+                                        <li>
+                                            <span>
+                                                Оплатa
+                                            </span>
+                                            Оплата при отриманні товару
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Доставка
+                                            </span>
+                                            За тарифами перевізника
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Всього
+                                            </span>
+                                            20 0000 грн
+                                        </li>
+                                    </ul>
+                                    <button class="pa-orders-card--repeat">
+                                        Повторити замовлення
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pa-orders-card">
+                        <div class="pa-orders-card-main">
+                            <div class="pa-orders-card-main--status">
+                                <p>
+                                    № 706 500 599 от 10.06.21
+                                </p>
+                                <span class="-done">
+                                    Виконано
+                                </span>
+                            </div>
+                            <div class="pa-orders-card-main--price">
+                                <p>
+                                    Сума замовлення
+                                </p>
+                                <span>
+                                    20 0000 грн
+                                </span>
+                            </div>
+                            <div class="pa-orders-card--photo">
+                                <img src="img/product/photo-1.jpg" alt="img">
+                            </div>
+                            <button class="pa-orders-card--arrow">
+                                <svg>
+                                    <use xlink:href="img/svgsprite/svgsprite.svg#chevron-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="pa-orders-card-dropdown">
+                            <div class="pa-orders-card-dropdown--inner">
+                                <div>
+                                    <a href="#" class="pa-orders-card--history">
+                                        Исторія замовлення
+                                    </a>
+                                    <p class="pa-orders-card-dropdown-title">
+                                        Информація про замовлення
+                                    </p>
+                                    <ul class="pa-orders-card--info">
+                                        <li>
+                                            ТТН 20450399616712
+                                        </li>
+                                        <li>
+                                            Самовивіз з Нової Пошти
+                                        </li>
+                                        <li>
+                                            Київ, Віддiлення №164, вул.
+                                        </li>
+                                        <li>
+                                            Петрова Анна Сергіївна
+                                        </li>
+                                        <li>
+                                            0502823698
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="pa-orders-card-product">
+                                        <div class="pa-orders-card--photo">
+                                            <img src="img/product/photo-1.jpg" alt="img">
+                                        </div>
+                                        <div class="pa-orders-card-product--name">
+                                            Newland MT65 Beluga III 2D
+                                        </div>
+                                        <ul class="pa-orders-card-product--list">
+                                            <li>
+                                                <p class="pa-orders-card-dropdown-title">
+                                                    Ціна
+                                                </p>
+                                                <span>
+                                                    20 0000 грн
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <p class="pa-orders-card-dropdown-title">
+                                                    Кількцість
+                                                </p>
+                                                <span>
+                                                    1
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <p class="pa-orders-card-dropdown-title">
+                                                    Сума
+                                                </p>
+                                                <span>
+                                                    20 0000 грн
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="pa-orders-card--check">
+                                        <li>
+                                            <span>
+                                                Оплатa
+                                            </span>
+                                            Оплата при отриманні товару
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Доставка
+                                            </span>
+                                            За тарифами перевізника
+                                        </li>
+                                        <li>
+                                            <span>
+                                                Всього
+                                            </span>
+                                            20 0000 грн
+                                        </li>
+                                    </ul>
+                                    <button class="pa-orders-card--repeat">
+                                        Повторити замовлення
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('./layout/subscription-banner.html')
+
+@@include('./layout/footer.html')
+
+@@include('./layout/popups.html')
+
+@@include('./layout/fixed-elements.html')
+
+@@include('./layout/scripts.html')
+ 
+</body>
+    
+</html>

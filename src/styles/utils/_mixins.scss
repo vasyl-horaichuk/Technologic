@@ -1,0 +1,35 @@
+// @include media-queries(name){}
+@mixin media-queries($width, $type: max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+// @include row()
+@mixin row() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// @include row-offset($offset)
+@mixin row-offset($offset) {
+    margin-left: -$offset;
+    margin-right: -$offset;
+}
+
+// @include col($col, $gutter)
+@mixin col($col, $gutter) {
+    width: calc(100% / 12 * #{$col} - #{$gutter});
+}
+
+// @include col-offset($offset)
+@mixin col-offset($offset) {
+    margin-left: $offset;
+    margin-right: $offset;
+}

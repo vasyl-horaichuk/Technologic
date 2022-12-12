@@ -1,0 +1,232 @@
+/**
+ * Hero
+ */
+.automation-hero{
+    padding: 180px 0px 260px;
+    background: #063649;
+    position: relative;
+
+    @include media-queries(tablet-wide){
+        padding: 120px 0;   
+    }
+
+    @include media-queries(phone-wide){
+        padding: 50px 0px 0px;
+    }
+
+    &-info{
+        color: #FFFFFF;
+        max-width: 40%;
+
+        @include media-queries(tablet-wide){
+            max-width: 65%;
+        }
+
+        @include media-queries(phone-wide){
+            max-width: 100%;
+        }
+    }
+
+    &-title{
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 80px; 
+        margin-bottom: 35px;
+
+        @include media-queries(phone-wide){
+            font-size: 32px;
+            line-height: 41px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-about{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+
+        @include media-queries(phone-wide){
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    &-photo{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 52%;
+        object-fit: cover;
+        display: block;
+
+        @include media-queries(tablet-wide){
+            width: 30%;
+        }
+
+        @include media-queries(phone-wide){
+            position: static;
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+}
+
+/**
+ * Business Areas
+ */
+.automation-business-areas{
+    padding: 162px 0;
+
+    @include media-queries(phone-wide){
+        padding: 55px 0px 75px;
+    }
+
+    .typ-title{
+        text-align: center;
+
+        @include media-queries(phone-wide){
+            text-align: left;
+        }
+    }
+
+    .about-clients-card{
+
+        &--title{
+            margin-bottom: 30px;
+
+            @include media-queries(phone-wide){
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+/**
+ * Process
+ */
+.automation-process{
+    padding: 137px 0 152px;
+
+    @include media-queries(phone-wide){
+        padding: 45px 0px 50px;
+    }
+
+    .typ-title{
+        text-align: center;
+
+        @include media-queries(phone-wide){
+            text-align: left;
+        }
+    }
+
+    &-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 115px 80px;
+        margin-top: 90px;
+        counter-reset: automation-process;
+        background: url(../img/automation/process/bg.png) no-repeat center center;
+    
+        @include media-queries(tablet-wide){
+            background: transparent;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px 50px
+        }
+
+        @include media-queries(tablet){
+            grid-template-columns: 1fr;
+        }
+
+        @include media-queries(phone-wide){
+            gap: 75px
+        }
+    }
+
+    &-card{
+        position: relative;
+        max-width: 500px;
+
+        &:nth-child(1){
+            
+            @include media-queries(tablet-wide, min){
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+        }
+
+        &:nth-child(2){
+            
+            @include media-queries(tablet-wide, min){
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+        }
+
+        &:nth-child(3){
+            
+            @include media-queries(tablet-wide, min){
+                grid-column: 3/4;
+                grid-row: 2/3;
+            }
+        }
+
+        &:nth-child(4){
+
+            @include media-queries(tablet-wide, min){
+                grid-column: 3/4;
+                grid-row: 3/4;
+            }
+        }
+
+        &:nth-child(5){
+            
+            @include media-queries(tablet-wide, min){
+                grid-column: 2/3;
+                grid-row: 4/5;
+            }
+        }
+
+        &:nth-child(6){
+            
+            @include media-queries(tablet-wide, min){
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+        }
+
+        &:before{
+            counter-increment: automation-process;
+            display: block;
+            content: counter(automation-process);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            font-weight: 800;
+            font-size: 150px;
+            color: rgba(255, 196, 0, 0.65);
+            pointer-events: none;
+        }
+
+        &--title{
+            font-weight: bold;
+            font-size: 31px;
+            line-height: 30px;
+            margin-bottom: 35px;
+            position: relative;
+
+            @include media-queries(phone-wide){
+                font-size: 19px;
+                line-height: 26px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &--info{
+            font-size: 16px;
+            line-height: 26px;
+            position: relative;
+        }
+    }
+}

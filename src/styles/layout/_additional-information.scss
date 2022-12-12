@@ -1,0 +1,48 @@
+.additional-information{
+    background: #F7F8F9;
+    padding: 30px 0;
+
+    &-list{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px 120px;
+        max-width: 1152px;
+
+        @include media-queries(tablet-wide){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0px 60px;
+        }
+
+        @include media-queries(phone-wide){
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        li{
+
+            a{
+                display: flex;
+                align-items: center;
+
+                span{
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 64px;
+                    color: #18191F;
+
+                    @include media-queries(phone-wide){
+                        font-size: 16px;
+                    }
+                }
+
+                svg{
+                    margin-left: 10px;
+                    width: 30px;
+                    height: 30px;
+                    fill: #2091F9;
+                }
+            }
+        }
+    }
+}

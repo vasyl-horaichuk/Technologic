@@ -1,0 +1,340 @@
+@@include('./layout/head.html', {
+    'title': 'Technologic | Checkout'
+})
+
+<body>
+
+@@include('./layout/nav-simple.html')
+
+<section>
+    <div class="container checkout-top-line">
+        <div class="checkout-title">
+            Оформлення замовлення
+        </div>
+        <a href="#" class="return-to-purchases">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.75 9.71591L7.59018 9L12 12.8084L16.4098 9L17.25 9.71591L12 14.25L6.75 9.71591Z" fill="#828282"/>
+            </svg>
+            <span>Повернутись до покупок</span>
+        </a>
+    </div>
+</section>
+
+<section class="checkout">
+    <div class="container">
+        <div class="checkout-main">
+            <div class="checkout-contact">
+                <div class="checkout-contact--title">
+                    1. Контактна інформація
+                </div>
+                <div class="checkout-contact--info">
+                    Ана Романовська, тел +38(067)568-97-88, м.Київ
+                </div>
+                <button class="checkout-contact--edit">
+                    Редагувати
+                </button>
+            </div>
+            <div class="checkout-order">
+                <div class="checkout-order--title">
+                    Замовлення №1
+                </div>
+                <div class="checkout-order-card">
+                    <div class="checkout-order-card--title">
+                        Товари продавця  Technologic
+                    </div>
+                    <div class="checkout-order-card--main">
+                        <div class="checkout-order-card--photo">
+                            <img src="img/product/photo-1.jpg" alt="img">
+                        </div>
+                        <a href="#" class="checkout-order-card--name">
+                            Newland MT65 Beluga III 2D
+                        </a>
+                        <ul class="checkout-order-card--info">
+                            <li>
+                                <p>
+                                    Ціна
+                                </p>
+                                20 0000 грн
+                            </li>
+                            <li>
+                                <p>
+                                    Кількцість
+                                </p>
+                                1
+                            </li>
+                            <li>
+                                <p>
+                                    Сума
+                                </p>
+                                20 0000 грн
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-delivery">
+                <div class="checkout-delivery--title">
+                    Доставка у <span>Київ</span>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 10.2929C15.8166 9.90237 15.1834 9.90237 14.7929 10.2929L12 13.0858L9.20711 10.2929C8.81658 9.90237 8.18342 9.90237 7.79289 10.2929C7.40237 10.6834 7.40237 11.3166 7.79289 11.7071L11.2929 15.2071C11.6834 15.5976 12.3166 15.5976 12.7071 15.2071L16.2071 11.7071C16.5976 11.3166 16.5976 10.6834 16.2071 10.2929Z" fill="#777E91"></path>
+                    </svg>
+                </div>
+                <div class="checkout-delivery--items">
+                    <div class="checkout-delivery--item">
+                        <div class="checkout-checkbox">
+                            <input type="radio" name="checkout-delivery" id="1">
+                            <label for="1">
+                                Самовивіз з «Нової Пошти»
+                            </label>
+                        </div>
+                        <div class="checkout-delivery--price -free">
+                            125 грн
+                        </div>
+                        <div class="checkout-delivery-department">
+                            <button class="checkout-delivery-department--trigger">
+                                Обрати точку видачі
+                            </button>
+                            <div class="checkout-delivery-department--select">
+                                <p class="checkout-delivery-department--term">
+                                    Буде передано до служби доставки 14 вересня
+                                </p>
+                                <input type="text" placeholder="Виберіть відповідне відділення">
+                                <ul data-simplebar data-simplebar-auto-hide="false" class="checkout-delivery-department--list">
+                                    <li>
+                                        №1, вул. Пирогівський шлях, 135
+                                    </li>
+                                    <li>
+                                        №2, вул. Бережанська, 9
+                                    </li>
+                                    <li>
+                                        №3, вул. Калачівська, 13
+                                    </li>
+                                    <li>
+                                        №4, вул. Верховинна, 69
+                                    </li>
+                                    <li>
+                                        №5, вул. Федорова, 32
+                                    </li>
+                                    <li>
+                                        №1, вул. Пирогівський шлях, 135
+                                    </li>
+                                    <li>
+                                        №2, вул. Бережанська, 9
+                                    </li>
+                                    <li>
+                                        №3, вул. Калачівська, 13
+                                    </li>
+                                    <li>
+                                        №4, вул. Верховинна, 69
+                                    </li>
+                                    <li>
+                                        №5, вул. Федорова, 32
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-delivery--item">
+                        <div class="checkout-checkbox">
+                            <input type="radio" name="checkout-delivery" id="2">
+                            <label for="2">
+                                Самовивіз з "Meest"
+                            </label>
+                        </div>
+                        <div class="checkout-delivery--price -free">
+                            125 грн
+                        </div>
+                    </div>
+                    <div class="checkout-delivery--item">
+                        <div class="checkout-checkbox">
+                            <input type="radio" name="checkout-delivery" id="3">
+                            <label for="3">
+                                Відділення «Justin» (Фора, Сільпо)
+                            </label>
+                        </div>
+                        <div class="checkout-delivery--price">
+                            1 грн
+                        </div>
+                    </div>
+                    <div class="checkout-delivery--item">
+                        <div class="checkout-checkbox">
+                            <input type="radio" name="checkout-delivery" id="4">
+                            <label for="4">
+                                Кур'єр за вашою адресою
+                            </label>
+                        </div>
+                        <div class="checkout-delivery--price -free">
+                            125 грн
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-payment">
+                <div class="checkout-payment--title">
+                    Спосіб оплати
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 10.2929C15.8166 9.90237 15.1834 9.90237 14.7929 10.2929L12 13.0858L9.20711 10.2929C8.81658 9.90237 8.18342 9.90237 7.79289 10.2929C7.40237 10.6834 7.40237 11.3166 7.79289 11.7071L11.2929 15.2071C11.6834 15.5976 12.3166 15.5976 12.7071 15.2071L16.2071 11.7071C16.5976 11.3166 16.5976 10.6834 16.2071 10.2929Z" fill="#777E91"></path>
+                    </svg>
+                </div>
+                <div class="checkout-payment--items">
+                    <div class="checkout-payment--item">
+                        <div class="checkout-checkbox">
+                            <input type="radio" name="checkout-payment" id="11">
+                            <label for="11">
+                                <p>
+                                    Картою онлайн
+                                </p>
+                            </label>
+                        </div>
+                        <div class="checkout-payment-cards">
+                            <div class="checkout-checkbox">
+                                <input type="radio" name="checkout-payment-cards" id="111">
+                                <label for="111">
+                                    <p>
+                                        •••• •••• •••• 1542
+                                    </p>
+                                    <img src="img/icons/mastercard.svg" alt="ico">
+                                </label>
+                            </div>
+                            <div class="checkout-checkbox">
+                                <input type="radio" name="checkout-payment-cards" id="1111">
+                                <label for="1111">
+                                    Додати картку
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-payment--item">
+                        <div class="checkout-checkbox">
+                            <input type="radio" name="checkout-payment" id="22">
+                            <label for="22">
+                                Google Pay
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkout-payment--item">
+                        <div class="checkout-checkbox">
+                            <input type="radio" name="checkout-payment" id="33">
+                            <label for="33">
+                                <p>
+                                    Оплата при отриманні товару
+                                    <span>
+                                        Оплата карткою онлайн при отриманні замовлення у відділенні
+                                    </span>
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-callback">
+                <div class="checkout-checkbox">
+                    <input type="radio" name="checkout-callback" id="7">
+                    <label for="7">
+                        Не передзвонюйте для підтвердження
+                    </label>
+                </div>
+                <div class="product-main-services--tooltip">
+                    <svg>
+                        <use xlink:href="img/svgsprite/svgsprite.svg#question"></use>
+                    </svg>
+                    <div class="product-main-services--info">
+                        * СТРАХУВАННЯ - безкоштовний ремонт пристрою або компенсація в негарантійних випадках в період дії Договору страхування (механічні пошкодження, попадання рідини і ін.).
+                        <br>
+                        * ДОДАТКОВА ГАРАНТІЯ - безкоштовний ремонт пристрою або компенсація при гарантійних поломки починаючи з 366 дня від дати придбання.
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-comment">
+                <textarea placeholder="Додати коментар"></textarea>
+            </div>
+        </div>
+        <div class="checkout-cart">
+            <div class="checkout-cart-inner">
+                <div class="checkout-cart-top">
+                    <div class="checkout-cart-title">
+                        Кошик
+                    </div>
+                    <button class="checkout-cart-edit">
+                        <svg>
+                            <use xlink:href="img/svgsprite/svgsprite.svg#edit"></use>
+                        </svg>
+                        <span>Редагувати</span>
+                    </button>
+                </div>
+                <ul class="checkout-cart-list">
+                    <li>
+                        <span>
+                            1 товар на сумму
+                        </span>
+                        <span>
+                            20 000 грн
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Сума доставки
+                        </span>
+                        <span>
+                            125 грн
+                        </span>
+                    </li>
+                </ul>
+                <div class="checkout-cart-total">
+                    <span>
+                        Сума до сплати:
+                    </span>
+                    <span>
+                        20 125 грн
+                    </span>
+                </div>
+                <button class="checkout-cart-confirm"> 
+                    Підтвердити замовлення
+                </button>
+                <div class="checkout-cart-bonus">
+                    <img src="img/icons/spa-discount.svg" alt="ico">
+                    <p>
+                        Отримати знижку / використати бонуси
+                    </p>
+                    <svg>
+                        <use xlink:href="img/svgsprite/svgsprite.svg#arrow-down"></use>
+                    </svg>
+                </div>
+                <div class="checkout-cart-promocode">
+                    <div class="checkout-checkbox">
+                        <input type="checkbox" id="checkout-promocode">
+                        <label for="checkout-promocode">
+                            Використати промокод
+                        </label>
+                    </div>
+                    <div class="product-main-services--tooltip">
+                        <svg>
+                            <use xlink:href="img/svgsprite/svgsprite.svg#question"></use>
+                        </svg>
+                        <div class="product-main-services--info">
+                            * СТРАХУВАННЯ - безкоштовний ремонт пристрою або компенсація в негарантійних випадках в період дії Договору страхування (механічні пошкодження, попадання рідини і ін.).
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="checkout-cart-delivery">
+                    <svg>
+                        <use xlink:href="img/svgsprite/svgsprite.svg#delivery"></use>
+                    </svg>
+                    <p>
+                        Дізнатися докладніше про доставку
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('./layout/popups.html')
+
+@@include('./layout/fixed-elements.html')
+
+@@include('./layout/scripts.html')
+ 
+</body>
+    
+</html>

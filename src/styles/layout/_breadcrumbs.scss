@@ -1,0 +1,55 @@
+.breadcrumbs{
+    padding: 20px 0;
+
+    @include media-queries(phone-wide){
+        padding: 10px 0;
+    }
+
+    &-list{
+        display: flex;
+        align-items: center;
+        // flex-wrap: wrap;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        li{
+            font-size: 14px;
+            line-height: 22px;
+            color: $text-secondary;
+            display: flex;
+            align-items: center;
+            margin-top: 3px;
+            white-space: nowrap;
+
+            &:after{
+                display: block;
+                content: '/';
+                margin: 0px 5px;
+                font-size: 12px;
+                line-height: 21px;
+                color: $blue
+            }
+
+            &:last-child{
+                
+                &:after{
+                    display: none;
+                }
+            }
+
+            a{
+                color: inherit;
+            }
+
+            span{
+                margin: 0px 3px;
+                color: $blue;
+            }
+        }
+    }
+}

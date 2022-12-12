@@ -1,0 +1,373 @@
+/**
+ * Catalog
+ */
+.catalog{
+    padding-top: 20px;
+
+    @include media-queries(phone-wide){
+        padding-top: 3px;
+        padding-bottom: 20px;
+    }
+
+    .s-title{
+
+        @include media-queries(phone-wide){
+            font-size: 21px;
+            line-height: 34px
+        }
+    }
+
+    &-items{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 62px 65px;
+
+        @include media-queries(laptop-wide){
+            gap: 50px;
+        }
+
+        @include media-queries(laptop){
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        @include media-queries(tablet-wide){
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        @include media-queries(phone-wide){
+            margin-top: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+    }
+
+    &-card{
+        display: block;
+
+        &:hover{
+
+            .catalog-card--photo{
+                background: #DADFDF;
+
+                img{
+                    transform: scale(1.5);
+
+                    @include media-queries(tablet){
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            p{
+                color: #FFCF00;
+            }
+        }
+
+        &--photo{
+            background: #F0F0F0;
+            box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            transition: 0.3s;
+
+            @include media-queries(tablet-wide){
+                height: 210px;
+            }
+
+            @include media-queries(phone-wide){
+                padding: 10px;
+                height: 170px;
+            }
+
+            picture{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                width: 125px;
+                height: 125px;
+                object-fit: cover;
+                transition: 0.3s;
+
+                @include media-queries(phone-wide){
+                    width: 122px;
+                    height: 122px;
+                }
+            }
+        }
+
+        p{
+            text-align: center;
+            font-size: 16px;
+            line-height: 21px;
+            color: #4E5159;
+            margin-top: 15px;
+            transition: 0.3s;
+
+            @include media-queries(phone-wide){
+                font-size: 13px;
+                line-height: 18px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+/**
+ * Products
+ */
+.catalog-products{
+    padding-top: 60px;
+
+    @include media-queries(phone-wide){
+        padding-top: 20px;
+    }
+
+    &-items{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+
+        @include media-queries(laptop){
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include media-queries(tablet-wide){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-queries(phone-wide){
+            grid-template-columns: 1fr;
+            gap: 5px;
+            margin-top: 20px;
+        }
+
+        .product-card{
+
+            &:nth-child(4){
+                
+                @include media-queries(laptop){
+                    display: none;
+                }   
+            }
+        }
+    }
+
+    &-show-all{
+        background: #FFFFFF;
+        border: 1px solid rgba(224, 224, 224, 0.6);
+        box-sizing: border-box;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media-queries(phone-wide){
+            margin-top: 10px;
+            padding: 45px;
+        }
+
+        &:hover{
+            box-shadow: 0px 4px 20px rgb(0 14 56 / 20%)
+        }
+
+        img{
+
+            @include media-queries(phone-wide){
+                width: 45px;
+            }
+        }
+
+        span{   
+            color: $primary;
+            margin-top: 70px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 29px;
+
+            @include media-queries(phone-wide){
+                margin-top: 30px;
+                font-size: 18px;
+                line-height: 29px;
+            }
+        }
+    }
+}
+
+/**
+ * About
+ */
+.catalog-about{
+    padding-top: 60px;
+
+    @include media-queries(phone-wide){
+        padding-top: 30px;
+    }
+
+    .s-title{
+        margin-bottom: 20px;
+
+        @include media-queries(phone-wide){
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 10px;
+        }
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 24px;
+        color: $text-secondary;
+        margin-bottom: 10px;
+        position: relative;
+        max-height: 102px;
+        overflow: hidden;
+
+        @include media-queries(phone-wide){
+            font-size: 13px;
+            line-height: 21px;
+        }
+
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(181.87deg, rgba(253, 251, 251, 0) 25.59%, rgba(253, 251, 251, 0.54) 61.4%, rgba(254, 254, 254, 0.85653) 76.53%, #FFFFFF 106.3%);
+        }
+    }
+
+    a{
+        display: flex;
+        align-items: center;
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: $blue;
+
+        &:hover{
+            color: $blue
+        }
+
+        svg{
+            width: 24px;
+            height: 24px;
+            fill: currentColor
+        }
+    }
+}
+
+/**
+ * FAQ
+ */
+.catalog-faq{
+    padding: 60px 0px;
+
+    @include media-queries(phone-wide){
+        padding: 20px 0;
+    }
+
+    .s-title{
+        margin-bottom: 20px;
+    }
+
+    &-item{
+        background: #FFFFFF;
+        border: 1px solid rgba(224, 224, 224, 0.6);
+        border-radius: 4px;
+        transition: 0.3s;
+        margin-bottom: 20px;
+
+        @include media-queries(phone-wide){
+            margin-bottom: 15px;
+        }
+
+        &:last-child{
+            margin: 0;
+        }
+
+        &.active{
+            background: rgba(229, 229, 229, 0.4);
+            border-color: rgba(229, 229, 229, 0.4);
+
+            .catalog-faq-item--trigger{
+
+                svg{
+
+                    rect{
+
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--trigger{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px 60px 22px 20px;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 24px;
+            color: #363940;
+            cursor: pointer;
+
+            @include media-queries(phone-wide){
+                font-size: 16px;
+                line-height: 24px;
+                padding: 19px 20px 18px 10px;
+            }
+
+            svg{
+                width: 17px;
+                min-width: 17px;
+                fill: $blue;
+                margin-left: 10px;
+
+                @include media-queries(phone-wide){
+                    width: 12px;
+                    min-width: 12px
+                }
+            }
+        }
+
+        &--dropdown{
+            display: none;
+        }
+
+        &--content{
+            padding: 0 60px 20px 20px;
+            font-family: "Open Sans";
+            font-size: 16px;
+            line-height: 22px;
+            color: #363940;
+
+            @include media-queries(phone-wide){
+                padding: 0px 10px 20px 10px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}

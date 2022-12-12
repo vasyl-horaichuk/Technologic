@@ -1,0 +1,130 @@
+.blog-news{
+    padding: 50px 0px 60px;
+
+    @include media-queries(phone-wide){
+        padding: 10px 0px 70px;
+    }
+
+    &-inner{
+        margin-top: 30px;
+        display: flex;
+
+        @include media-queries(phone-wide){
+            margin-top: 20px;
+        }
+    }
+
+    &-sidebar{
+        width: 326px;
+        min-width: 326px;
+        margin-right: 23px;
+
+        @include media-queries(laptop){
+            width: 290px;
+            min-width: 290px;
+            margin-right: 20px;
+        }
+
+        @include media-queries(tablet-wide){
+            display: none;
+        }
+    }
+
+    &-nav{
+        padding: 24px 45px;
+        background: #FFFFFF;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+
+        &-title{
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #4E5159;
+            margin-bottom: 15px;
+        }
+
+        &-list{
+
+            li{
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid  rgba(224, 224, 224, 0.6);
+
+                &:last-child{
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                }
+
+                &.active{
+
+                    a{
+                        font-weight: 600;
+                        color: #FFC600;
+                    }
+                }
+
+                a{
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #18191F;
+                }
+            }
+        }
+    }
+
+    &-main{
+        width: 100%;
+    }
+
+    &-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-content: start;
+
+        @include media-queries(laptop){
+            gap: 20px 15px;
+        }
+
+        @include media-queries(tablet-wide){
+            gap: 20px;
+        }
+
+        @include media-queries(tablet){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-queries(phone-wide){
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+    }
+
+    &-show-more{
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 29px;
+        color: #FFFFFF;
+        background: #071D49;
+        border-radius: 6px;
+        padding: 7px 20px;
+        margin: 60px auto 0;
+        display: flex;
+        align-items: center;
+
+        @include media-queries(phone-wide){
+            margin-top: 20px;
+        }
+
+        svg{
+            width: 24px;
+            height: 24px;
+            fill: #FCFEFF;
+            margin-right: 10px;
+        }
+    }
+}

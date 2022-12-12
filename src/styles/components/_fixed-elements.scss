@@ -1,0 +1,54 @@
+/**
+ * To top
+ */
+.to-top{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+    cursor: pointer;
+    right: 43px;
+    bottom: 43px;
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    background: $base;
+
+    @include media-queries(tablet){
+        bottom: 170px;
+        right: 40px;
+    }
+
+    &.visible{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/**
+ * Chat Trigger
+ */
+.chat-trigger{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    position: fixed;
+    right: 101px;
+    bottom: 29px;
+
+    @include media-queries(tablet){
+        right: 26px;
+        bottom: 86px;
+    }
+}

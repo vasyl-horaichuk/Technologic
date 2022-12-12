@@ -1,0 +1,693 @@
+/**
+ * Hero
+ */
+.lending-hero{
+    background: #E4F2F8;
+    padding: 192px 0;
+    position: relative;
+    overflow: hidden;
+
+    @include media-queries(tablet-wide){
+        padding: 120px 0;
+    }
+
+    @include media-queries(tablet){
+    }
+
+    @include media-queries(phone-wide){
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+
+    &-info{
+        max-width: 60%;
+
+        @include media-queries(tablet-wide){
+            max-width: 70%;
+        }
+
+        @include media-queries(tablet){
+            max-width: 85%;
+        }
+
+        @include media-queries(phone-wide){
+            max-width: 100%;
+        }
+    }
+
+    &-title{
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 77px;
+        margin-bottom: 30px;
+
+        @include media-queries(phone-wide){
+            font-size: 32px;
+            line-height: 45px;
+            margin-bottom: 7px;
+        }
+    }
+
+    &-about{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #4E5159;
+
+        @include media-queries(phone-wide){
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px
+        }
+    }
+
+    &-photo{
+        position: absolute;
+        display: block;
+        bottom: 0;
+        height: 100%;
+        left: 51%;
+
+        @include media-queries(tablet-wide){
+            left: 55%;
+        }
+
+        @include media-queries(tablet){
+            left: 65%;
+            height: auto;
+            max-width: 600px;
+        }
+
+        @include media-queries(phone-wide){
+            position: static;
+            width: 70%;
+            margin: 40px auto 0;
+        }
+    }
+}
+
+/**
+ * Nav
+ */
+.lending-nav{
+    background: #F4F4F4;
+
+    &-list{
+        padding: 29px 0px 14px;
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        
+        @include media-queries(tablet-wide){
+            justify-content: flex-start;
+        }
+
+        @include media-queries(phone-wide){
+            padding: 20px 10px 11px;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        li{
+            font-size: 14px;
+            line-height: 24px;
+            color: #828282;
+            position: relative;
+            cursor: pointer;
+            white-space: nowrap;
+
+            @include media-queries(tablet-wide){
+                margin-right: 20px;
+            }
+
+            &:last-child{
+                margin: 0;
+            }
+
+            &.active{
+                color: $secondary;
+
+                &:after{
+                    display: block;
+                    content: '';
+                    width: 100%;
+                    height: 3px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -14px;
+                    background: $secondary;
+
+                    @include media-queries(phone-wide){
+                        bottom: -11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Tabs
+ */
+.lending-tabs{
+    overflow: hidden;
+
+    .tab{
+        display: none;
+
+        &.active{
+            display: block;
+        }
+    }
+}
+
+/**
+ * About
+ */
+.lending-about{
+    padding: 60px 0px 123px;
+
+    @include media-queries(phone-wide){
+        padding: 20px 0;
+    }
+
+    .s-title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 64px;
+        color: #18191F;
+
+        @include media-queries(phone-wide){
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
+
+    &-main{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        position: relative;
+
+        @include media-queries(tablet-wide){
+            display: block;
+        }
+
+        @include media-queries(phone-wide){
+            margin-bottom: 20px;
+        }
+
+        img{
+            display: block;
+            
+            @include media-queries(tablet-wide){
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                right: -250px;
+            }
+
+            @include media-queries(tablet){
+                width: 550px;
+            }
+
+            @include media-queries(phone-wide){
+                position: static;
+                transform: translate(0);
+                max-width: 400px;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    }
+
+    &-info{
+        margin-right: 30px;
+        max-width: 50%;
+        position: relative;
+        z-index: 10;
+
+        @include media-queries(tablet-wide){
+            max-width: 80%;
+            margin-right: 0;
+        }
+
+        @include media-queries(phone-wide){
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-list{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        counter-reset: lending-about;
+        margin-top: 30px;
+
+        @include media-queries(phone-wide){
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 20px;
+        }
+
+        li{
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;    
+            position: relative;
+
+            @include media-queries(phone-wide){
+                margin-bottom: 15px;
+            }
+
+            &:last-child{
+                margin: 0;
+
+                &:after{
+                    display: none;
+                }
+            }
+
+            &:before{
+                counter-increment: lending-about;
+                display: block;
+                content: counter(lending-about);
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                border-radius: 50%;
+                background: $secondary;
+                margin-right: 30px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 40px;
+                color: #FFFFFF;
+                text-align: center;
+                z-index: 10;
+
+                @include media-queries(phone-wide){
+                    margin-right: 15px;
+                }
+            }
+
+            &:after{
+                display: block;
+                content: '';
+                width: 2px;
+                top: 50%;
+                height: calc(100% + 30px);
+                left: 19px;
+                background: $secondary;
+                position: absolute;
+            }
+        }
+    }
+
+    .lending-table{
+    
+        &-fixed{
+            min-width: 140px;
+            max-width: 140px;
+        }
+    
+        &-scrolled{
+            width: 100%;
+
+            .lending-table-head,
+            .lending-table-body{
+                min-width: calc(1520px - 140px);
+            }
+    
+            .lending-table-row{
+                display: grid;
+                grid-template-columns: 190px 190px 190px 418px 392px;
+            }
+        }
+    }
+
+    &-attention{
+        margin-top: 60px;
+
+        @include media-queries(phone-wide){
+            margin-top: 20px;
+        }
+
+        &--title{
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 24px;
+            color: #FF0E0E;
+            margin-bottom: 30px;
+
+            @include media-queries(phone-wide){
+                font-size: 21px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &--info{
+            font-size: 16px;
+            line-height: 26px;
+            color: #363940;
+
+            @include media-queries(phone-wide){
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &-faq{
+        margin-top: 60px;
+
+        @include media-queries(phone-wide){
+            margin-top: 20px;
+        }
+
+        .s-title{
+            margin-bottom: 30px;
+
+            @include media-queries(phone-wide){
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+/**
+ * Table
+ */
+.lending-table{
+    display: flex;
+    align-items: flex-start;
+
+    &-fixed{
+        z-index: 5;
+
+        @include media-queries(laptop-wide){
+            box-shadow: 6px 0px 12px rgba(0, 0, 0, 0.05)
+        }
+    }
+
+    &-scrolled{
+        overflow: auto;
+        padding-bottom: 24px;
+        width: 100%;
+
+        @include media-queries(phone-wide){
+            margin-right: -10px;
+            padding-right: 10px;
+        }
+
+        .lending-table-cell{
+            box-shadow: inset 1px 0px 0px rgba(198, 209, 221, 0.5);
+        }
+
+        .simplebar-track.simplebar-horizontal{
+            background: rgba(235, 236, 236, 0.28);
+            border-radius: 5px;
+            height: 8px;
+            
+            @include media-queries(phone-wide){
+                right: 10px;
+            }
+
+            .simplebar-scrollbar{
+                height: 6px;
+                top: 1px;
+
+                &:before{
+                    display: block;
+                    content: '';
+                    left: 1px;
+                    right: 1px;
+                    border-radius: 5px;
+                    background: rgba(130, 130, 130, 0.62);
+                }
+            }
+        }
+    }
+
+    &-head{
+        background: #EFF6F9;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        color: #4E5159;
+
+        .lending-table-row{
+            border: 0;
+        }
+
+        .lending-table-cell{
+            min-height: 71px;
+            padding: 20px 16px 0px;
+        }
+    }
+
+    &-body{
+        font-size: 16px;
+        line-height: 20px;
+        color: #828282;
+
+        .lending-table-cell{
+            padding: 10px 16px 0;
+            min-height: 170px;
+        }
+    }
+
+    &-row{
+        border-bottom: 1px solid rgba(198, 209, 221, 0.5);
+
+        &:nth-child(even){
+            background: rgba(224, 224, 224, 0.2);
+        }
+    }
+
+    &-cell{
+        
+        ol{
+            list-style: decimal;
+            padding-left: 18px;
+        }
+
+        img{
+            margin-bottom: 10px;
+            display: block;
+            margin: 0 auto 10px;
+            width: 49px;
+            height: 49px;
+            object-fit: cover;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        span{
+            color: #ED1C24;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 16px;
+        }
+    }
+}
+
+/**
+ * Bank
+ */
+.lending-bank{
+    padding: 60px 0;
+
+    @include media-queries(phone-wide){
+        padding: 20px 0;
+    }
+
+    .typ-title{
+        text-align: center;
+    }
+
+    &-desc{
+        margin: 30px auto 0;
+        max-width: 1060px;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+        color: #4E5159;
+        text-align: center;
+
+        @include media-queries(phone-wide){
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 20px;
+        }
+    }
+
+    &-photo{
+        margin: 60px auto 0;
+        display: block;
+        max-height: 330px;
+        max-width: 100%;
+
+        @include media-queries(phone-wide){
+            max-height: 150px;
+            margin-top: 20px;
+        }
+    }
+
+    &-details{
+        max-width: 1060px;
+        margin: 60px auto 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 60px;
+
+        @include media-queries(tablet-wide){
+            gap: 30px
+        }
+
+        @include media-queries(tablet){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-queries(phone-wide){
+            grid-template-columns: 1fr;
+            margin-top: 20px;
+        }
+    }
+
+    &-requirements{
+        max-width: 1060px;
+        margin: 60px auto 0;
+        padding-top: 60px;
+        border-top: 1px solid rgba(224, 224, 224, 0.6);
+
+        @include media-queries(phone-wide){
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .lending-bank-info{
+            margin-bottom: 30px;
+
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+
+    &-info{
+        font-size: 18px;
+        line-height: 24px;
+        color: #828282;
+
+        @include media-queries(phone-wide){
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-title{
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 24px;
+            color: #18191F;
+            margin-bottom: 15px;
+
+            @include media-queries(phone-wide){
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        &-list{
+            list-style: decimal;
+            padding-left: 20px;
+        }
+    }
+
+    &-terms{
+        margin-top: 60px;
+        padding-top: 60px;
+        border-top: 1px solid rgba(224, 224, 224, 0.6);
+
+        @include media-queries(phone-wide){
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .lending-table{
+            margin-top: 30px;
+
+            @include media-queries(phone-wide){
+                margin-top: 20px;
+            }
+
+            &-fixed{
+                min-width: 328px;
+                max-width: 328px;
+
+                @include media-queries(tablet){
+                    min-width: 160px;
+                    max-width: 160px;
+                }
+            }
+        
+            &-scrolled{
+    
+                .lending-table-head,
+                .lending-table-body{
+                    min-width: calc(1520px - 328px);
+
+                    @include media-queries(tablet){
+                        min-width: 950px; 
+                    }
+                }
+        
+                .lending-table-row{
+                    display: grid;
+                    grid-template-columns: 190px 190px 353px 190px 269px;
+
+                    @include media-queries(tablet){
+                        grid-template-columns: repeat(5, 190px);
+                    }
+
+                }
+            }
+
+            &-head{
+
+                @include media-queries(tablet){
+                    font-size: 14px;
+                    line-height: 16px
+                }
+
+                .lending-table-cell{
+
+                    @include media-queries(tablet){
+                        padding-top: 10px;
+                    }
+                }
+            }
+
+            &-body{
+        
+                .lending-table-cell{
+                    min-height: 99px;
+                }
+            }
+        }
+    }
+}

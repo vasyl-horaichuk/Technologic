@@ -1,0 +1,167 @@
+.subscription-banner{
+    background: rgba(0, 129, 254, 0.2);
+    padding: 18px 0;
+
+    @include media-queries(phone-wide){
+        padding: 14px 17px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include media-queries(tablet-wide){
+            flex-direction: column;
+        }
+    }
+
+    &-title{
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 45px;
+        color: $primary;
+        max-width: 520px;
+        width: 100%;
+
+        @include media-queries(laptop){
+            max-width: 360px;
+        }
+
+        @include media-queries(tablet-wide){
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        @include media-queries(phone-wide){
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    &-form{
+        max-width: 380px;
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 36px;
+        padding: 12px 12px 12px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include media-queries(tablet-wide){
+            margin-bottom: 20px;
+            max-width: 500px;
+        }
+
+        @include media-queries(phone-wide){
+            padding: 6px 30px 6px 35px;
+        }
+
+        input{
+            width: 100%;
+            margin-right: 10px;
+            font-size: 14px;
+            line-height: 24px;
+
+            @include media-queries(phone-wide){
+                font-size: 11px;
+            }
+        }
+
+        button{
+            width: 48px;
+            min-width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: $secondary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+
+            @include media-queries(phone-wide){
+                width: 26px;
+                height: 26px;
+                min-width: 26px;
+            }
+            
+            &:hover{
+                box-shadow: 0px 4px 6px rgba(254, 224, 118, 0.33)
+            }
+
+            &:active{
+                background: #FFCE22;
+            }
+
+            svg{
+                width: 20px;
+                height: 20px;
+                fill: #fff;
+
+                @include media-queries(phone-wide){
+                    width: 11px;
+                    height: 11px;
+                }
+            }
+        }
+    }
+
+    &-social{
+        display: flex;
+        align-items: center;
+
+        li{
+            display: flex;
+            margin-right: 30px;
+
+
+            &:last-child{
+                margin: 0;
+            }
+
+            a{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include media-queries(phone-wide){
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &.-instagram{
+                    background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
+                }
+
+                &.-facebook{
+                    background: #4E6297
+                }
+
+                &.-linkedin{
+                    background: #2878B7
+                }
+
+                &.-youtube{
+                    background: #F40000
+                }
+
+                svg{
+                    width: 25px;
+                    height: 25px;
+                    fill: #fff;
+
+                    @include media-queries(phone-wide){
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
